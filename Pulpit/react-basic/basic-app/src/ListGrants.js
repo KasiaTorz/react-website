@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Grants from './Grants';
 
 
 class ListGrants extends Component {
@@ -8,15 +8,13 @@ class ListGrants extends Component {
         return (
             <div>
              <ul>
-                <li>{this.props.grants.name}Business and Commerce </li>
-                 <li>Science and Technology</li>
-                 <li>Environmental Quality</li>
-                 <li>Food and Nutrition</li>
-                 <li>Agriculture</li>
-                 <li>Transportation</li>
+                 {this.props.grants.map((grant)=>{
+                   return  <Grants/>
+                 })}
+
              </ul>
             </div>
-        );
+        )
     }
 }
 
