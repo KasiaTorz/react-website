@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
-
 import './App.css';
 import ListGrants from "./ListGrants";
 
+let grants = {
+    name:"grant",
+    type:"governmental",
+    location:"region"
+}
 class App extends Component {
   render() {
     return (

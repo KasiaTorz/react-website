@@ -8,7 +8,7 @@ class ListGrants extends Component {
             <div>
              <ul>
                 <li>Business and Commerce </li>
-                 <li> Science and Technology</li>
+                 <li>Science and Technology</li>
                  <li>Environmental Quality</li>
                  <li>Food and Nutrition</li>
                  <li>Agriculture</li>
