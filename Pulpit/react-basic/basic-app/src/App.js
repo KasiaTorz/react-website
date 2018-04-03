@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import ListGrants from "./ListGrants";
+import Grants from "./Grants";
 
 let grants = [
     {
