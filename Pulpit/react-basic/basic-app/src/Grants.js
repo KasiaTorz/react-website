@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Grants from './Grants';
+i
 
 
 class Grants extends Component {

@@ -5,11 +5,14 @@ import Grants from './Grants';
 
 let grants = [
     {
+    id:1,
     name:"grant",
     type:"governmental",
     location:"nationalwide"
 },
-    { name:"dotation",
+    {
+      id:2,
+      name:"dotation",
       type:"self-government",
       location:"region"
 
