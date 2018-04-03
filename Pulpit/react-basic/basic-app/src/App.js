@@ -2,11 +2,18 @@ import React, { Component } from 'react';
 import './App.css';
 import ListGrants from "./ListGrants";
 
-let grants = {
+let grants = [
+    {
     name:"grant",
     type:"governmental",
-    location:"region"
-};
+    location:"nationalwide"
+}
+    { name:"dotation",
+      type:"self-government",
+      location:"region"
+
+
+    }];
 
 class App extends Component {
   render() {
@@ -14,7 +21,6 @@ class App extends Component {
       <div>
           <h1 >List of grants</h1>
           <ListGrants grants ={this.props.grants}/>
-
       </div>
     );
   }
