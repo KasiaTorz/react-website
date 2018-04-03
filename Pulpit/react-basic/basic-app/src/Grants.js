@@ -7,9 +7,9 @@ class Grants extends Component {
         console.log(this.props.grants);
         return (
             <div>
-                <ul>
-                    <li>{this.props.grant.name}{this.props.grant.type}</li>
-                </ul>
+                <li>
+                    {this.props.grant.name}{this.props.grant.type}</li>
+                </li>
             </div>
         );
     }
