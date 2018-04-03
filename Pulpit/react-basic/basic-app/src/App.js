@@ -7,7 +7,7 @@ let grants = [
     name:"grant",
     type:"governmental",
     location:"nationalwide"
-}
+},
     { name:"dotation",
       type:"self-government",
       location:"region"
