@@ -6,13 +6,14 @@ let grants = {
     name:"grant",
     type:"governmental",
     location:"region"
-}
+};
+
 class App extends Component {
   render() {
     return (
-      <div className="App">
-          <h1 className="App-title">List of grants</h1>
-          <ListGrants/>
+      <div>
+          <h1 >List of grants</h1>
+          <ListGrants grants ={this.props.grants}/>
 
       </div>
     );
