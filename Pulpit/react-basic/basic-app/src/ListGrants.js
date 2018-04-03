@@ -1,19 +1,22 @@
 import React, { Component } from 'react';
 
-import './App.css';
 
-class App extends Component {
+
+class ListGrants extends Component {
     render() {
         return (
-            <div className="App">
-                <header className="App-header">
-
-                    <h1 className="App-title">List of grants</h1>
-                </header>
-
+            <div>
+             <ul>
+                <li>Business and Commerce </li>
+                 <li> Science and Technology</li>
+                 <li>Environmental Quality</li>
+                 <li>Food and Nutrition</li>
+                 <li>Agriculture</li>
+                 <li>Transportation</li>
+             </ul>
             </div>
         );
     }
 }
 
-export default App;
+export default ListGrants;
