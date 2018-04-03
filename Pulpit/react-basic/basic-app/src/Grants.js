@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Grants from './Grants';
 
 
 class Grants extends Component {
@@ -8,7 +8,7 @@ class Grants extends Component {
         return (
             <div>
                 <li>
-                    {this.props.grant.name}{this.props.grant.type}</li>
+
                 </li>
             </div>
         );
