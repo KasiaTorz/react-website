@@ -12,6 +12,7 @@ class ListGrants extends React.Component {
                         return <Grants grant={grant} key={ grant.id}/>
                     })}
                 </ul>
+            <input type="text"/>
             </div>
         )
     }
