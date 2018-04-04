@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 
 
-class Grants extends Component {
+class Grants extends React.Component {
     render() {
         console.log(this.props.grants);
         return (
             <div>
                 <li>
-                    {this.props.grant.name}{this.props.grant.type}
+                    {this.props.grants.name}{this.props.grants.type}
                 </li>
             </div>
-        );
+        )
     }
 }
 
