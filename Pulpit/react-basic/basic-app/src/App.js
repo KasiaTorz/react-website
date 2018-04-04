@@ -1,6 +1,6 @@
 import React  from 'react';
-
 import ListGrants from './ListGrants';
+
 
 
 let grants = [
@@ -26,9 +26,9 @@ class App extends React.Component {
           <h1 >List of grants</h1>
           <ListGrants grants ={this.props.grants}/>
       </div>
-    )
+    );
   }
 }
 
-React.render (<App />, document.getElementById('app'));
+
 export default App;
