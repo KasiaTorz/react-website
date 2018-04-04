@@ -19,15 +19,16 @@ let grants = [
 
     }];
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
       <div>
           <h1 >List of grants</h1>
           <ListGrants grants ={this.props.grants}/>
       </div>
-    );
+    )
   }
 }
 
+React.render (<App/>, document.getElementById('app'));
 export default App;
