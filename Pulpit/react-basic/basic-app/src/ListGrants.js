@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Grants from './Grants';
 
 
-class ListGrants extends Component {
+class ListGrants extends React.Component {
     render() {
         console.log(this.props.grants);
         return <div>
