@@ -1,7 +1,7 @@
 import React  from 'react';
 import './App.css';
 import ListGrants from './ListGrants';
-import Grants from './Grants';
+import  './Grants';
 
 let grants = [
     {
@@ -30,5 +30,5 @@ class App extends React.Component {
   }
 }
 
-React.render (<App/>, document.getElementById('app'));
+React.render (<App grants={grants}/>, document.getElementById('app'));
 export default App;
