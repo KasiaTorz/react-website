@@ -1,5 +1,5 @@
 import React  from 'react';
-import './App.css';
+
 import ListGrants from './ListGrants';
 
 
@@ -30,5 +30,5 @@ class App extends React.Component {
   }
 }
 
-React.render (<App grants={grants}/>, document.getElementById('app'));
+React.render (<App />, document.getElementById('app'));
 export default App;
