@@ -15,7 +15,7 @@ class ListGrants extends React.Component {
     render() {
         const filterListGrants= this.props.grants.filter(
             (grant) =>{
-                return grant.name.indexOf
+                return grant.name.indexOf(this.state.search) !== -1;
             }
         );
 
