@@ -1,18 +1,22 @@
 import React from 'react';
-import  Grants from './Grants';
-
+import Grants from './Grants';
 
 class ListGrants extends React.Component {
+
+    constructor(){
+        super();
+    }
+
     render() {
         console.log(this.props.grants);
         return (
             <div>
                 <ul>
                     {this.props.grants.map((grant) => {
-                        return <Grants grant={grant} key={ grant.id}/>
+                        return <Grants grant={grant} key={grant.id}/>
                     })}
                 </ul>
-            <input type="text" value= {this.state.search}/>
+                <input type="text" value={this.state.search}/>
             </div>
         )
     }
