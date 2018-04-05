@@ -5,6 +5,9 @@ class ListGrants extends React.Component {
 
     constructor(){
         super();
+        this.state ={
+            search: 'active'
+        };
     }
 
     render() {
@@ -16,7 +19,8 @@ class ListGrants extends React.Component {
                         return <Grants grant={grant} key={grant.id}/>
                     })}
                 </ul>
-                <input type="text" value={this.state.search}/>
+                <input type="text" value={this.state.search}
+                onChange={this.updateSearch}/>
             </div>
         )
     }
