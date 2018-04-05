@@ -10,7 +10,7 @@ class ListGrants extends React.Component {
         };
     }
     upDateSearch(event){
-     this.setState()
+     this.setState({search: event.target.value});
     }
     render() {
         console.log(this.props.grants);
