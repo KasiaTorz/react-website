@@ -9,18 +9,21 @@ class ListGrants extends React.Component {
             search: 'active'
         };
     }
-
+    upDateSearch(event){
+     this.setState()
+    }
     render() {
         console.log(this.props.grants);
         return (
             <div>
                 <ul>
-                    {this.props.grants.map((grant) => {
+                    {this.props.grants.map((grant)=> {
                         return <Grants grant={grant} key={grant.id}/>
                     })}
                 </ul>
-                <input type="text" value={this.state.search}
-                onChange={this.updateSearch}/>
+                <input type="text"
+                       value={this.state.search}
+                onChange={this.updateSearch.bind(this)}/>
             </div>
         )
     }
