@@ -13,7 +13,11 @@ class ListGrants extends React.Component {
      this.setState({search: event.target.value});
     }
     render() {
-        const filterListGrants= this.props.grants;
+        const filterListGrants= this.props.grants.filter(
+            (grant) =>{
+                return grant.name.indexOf
+            }
+        );
 
 
         console.log(this.props.grants);
