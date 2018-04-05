@@ -13,13 +13,14 @@ class ListGrants extends React.Component {
      this.setState({search: event.target.value});
     }
     render() {
-        const filterListGrants=
-            
+        const filterListGrants= this.props.grants;
+
+
         console.log(this.props.grants);
         return (
             <div>
                 <ul>
-                    {this.props.grants.map((grant)=> {
+                    {filterListGrants.map((grant)=> {
                         return <Grants grant={grant} key={grant.id}/>
                     })}
                 </ul>
