@@ -13,6 +13,8 @@ class ListGrants extends React.Component {
      this.setState({search: event.target.value});
     }
     render() {
+        const filterListGrants=
+            
         console.log(this.props.grants);
         return (
             <div>
