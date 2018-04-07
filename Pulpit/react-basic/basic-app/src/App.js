@@ -24,7 +24,7 @@ class App extends React.Component {
     return (
       <div>
           <h1 >List of grants</h1>
-          <ListGrants grants ={this.props.grants}/>
+          <ListGrants grants ={grants}/>
       </div>
     );
   }

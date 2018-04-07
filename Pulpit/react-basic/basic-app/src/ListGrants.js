@@ -23,7 +23,7 @@ class ListGrants extends React.Component {
             <div>
                 <input type="text"
                        value={this.state.search}
-                       onChange={this.updateSearch.bind(this)}/>
+                       onChange={this.upDateSearch.bind(this)}/>
                 <ul>
                     {filterListGrants.map((grant)=> {
                         return <Grants grant={grant} key={grant.id}/>

@@ -4,11 +4,11 @@ import React from 'react';
 
 class Grants extends React.Component {
     render() {
-        console.log(this.props.grants);
+        console.log(this.props.grant);
         return (
             <div>
                 <li>
-                    {this.props.grants.name}{this.props.grants.type}
+                    {this.props.grant.name}{this.props.grant.type}
                 </li>
             </div>
         )
