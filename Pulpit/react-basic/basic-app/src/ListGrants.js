@@ -22,7 +22,7 @@ class ListGrants extends React.Component {
         let location= this.refs.location.value;
         console.log()
         this.setState({
-            grants:this.state.grants.push({name,type,location})
+            grants:this.state.grants.concat({name,type,location})
         })
     }
     render() {
