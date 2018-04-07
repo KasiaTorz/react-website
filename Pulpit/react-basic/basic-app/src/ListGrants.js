@@ -4,10 +4,10 @@ import Grants from './Grants';
 class ListGrants extends React.Component {
 
     constructor(){
-        super(props);
+        super();
         this.state ={
             search: '',
-            grants:props.grants
+            grants:''
         };
     }
     upDateSearch(event){
@@ -24,9 +24,12 @@ class ListGrants extends React.Component {
         this.setState({
             grants:this.state.grants.concat({name,type,location})
         })
+        this.refs.name.value= '';
+        this.refs.type.value='';
+        this.refs.location='';
     }
     render() {
-        const filterListGrants= this.state.props.grants.filter(
+        const filterListGrants= this.state.grants.filter(
             (grant) =>{
                 return grant.name.toLowerCase().indexOf(this.state.search) !== -1;
             }
