@@ -16,7 +16,11 @@ class ListGrants extends React.Component {
 
     addGrants(event){
         event.preventDefault();
-        console.log(this.addGrants())
+        let name= this.refs.name.value
+        console.log()
+        this.setState({
+            grants:this.state.grants.push({})
+        })
     }
     render() {
         const filterListGrants= this.state.props.grants.filter(
