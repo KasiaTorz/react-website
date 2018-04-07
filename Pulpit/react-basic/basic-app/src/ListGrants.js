@@ -4,16 +4,17 @@ import Grants from './Grants';
 class ListGrants extends React.Component {
 
     constructor(){
-        super();
+        super(props);
         this.state ={
-            search: ''
+            search: '',
+            grants:props.grants
         };
     }
     upDateSearch(event){
      this.setState({search: event.target.value});
     }
     render() {
-        const filterListGrants= this.props.grants.filter(
+        const filterListGrants= this.state.props.grants.filter(
             (grant) =>{
                 return grant.name.toLowerCase().indexOf(this.state.search) !== -1;
             }
