@@ -13,6 +13,11 @@ class ListGrants extends React.Component {
     upDateSearch(event){
      this.setState({search: event.target.value});
     }
+
+    addGrants(event){
+        event.preventDefault();
+        console.log(this.addGrants())
+    }
     render() {
         const filterListGrants= this.state.props.grants.filter(
             (grant) =>{
@@ -26,11 +31,12 @@ class ListGrants extends React.Component {
                        placeholder="search"
                        value={this.state.search}
                        onChange={this.upDateSearch.bind(this)}/>
-                <form>
+                <form onSubmit={this.addGrants.bind(this)}>
                     <input type= "text" ref="name"/>
                     <input type= "text" ref="type"/>
                     <input type= "text" ref="when"/>
                     <input type= "text" ref="where"/>
+                    <button type="submit">Search Offer of Grants</button>
                 </form>
 
 
