@@ -29,7 +29,7 @@ class ListGrants extends React.Component {
         this.refs.location='';
     }
     render() {
-        const filterListGrants= this.state.grants.filter(
+        const filterListGrants= this.props.grants.filter(
             (grant) =>{
                 return grant.name.toLowerCase().indexOf(this.state.search) !== -1;
             }
