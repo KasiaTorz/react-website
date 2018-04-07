@@ -6,7 +6,7 @@ class ListGrants extends React.Component {
     constructor(){
         super();
         this.state ={
-            search: 'active'
+            search: ''
         };
     }
     upDateSearch(event){
