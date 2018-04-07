@@ -16,7 +16,10 @@ class ListGrants extends React.Component {
 
     addGrants(event){
         event.preventDefault();
-        let name= this.refs.name.value
+
+        let name= this.refs.name.value;
+        let type= this.refs.type.value;
+        let location= this.refs.location.value;
         console.log()
         this.setState({
             grants:this.state.grants.push({})
